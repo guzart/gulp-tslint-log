@@ -18,13 +18,12 @@ function tslintPlugin(config) {
         config = undefined;
     }
 
+    var configObj = Lint.Configuration.findConfiguration(configPath);
+    var configRules = configObj.rules;
+
     var options = {
         formatter: 'json',
-        configuration: merge(
-            true,
-            Lint.Configuration.findConfiguration(configPath),
-            { rules: config }
-        )
+        configuration: { rules: merge(true, configRules, config) }
     };
 
     return through.obj(objectStream);
