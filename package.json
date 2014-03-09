@@ -1,0 +1,27 @@
+{
+  "name": "gulp-tslint-log",
+  "version": "0.0.0",
+  "description": "tslint plugin for gulp",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/guzart/gulp-tslint-log.git"
+  },
+  "keywords": [
+    "tslint",
+    "gulp",
+    "log"
+  ],
+  "author": "Arturo Guzman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guzart/gulp-tslint-log/issues"
+  },
+  "homepage": "https://github.com/guzart/gulp-tslint-log",
+  "dependencies": {
+    "tslint": "^0.4.6",
+    "gulp-util": "^2.2.14",
+    "through2": "^0.4.1",
+    "merge": "^1.1.2"
+  }
+}
