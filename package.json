@@ -1,6 +1,6 @@
 {
   "name": "gulp-tslint-log",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "tslint plugin for gulp",
   "main": "index.js",
   "repository": {
