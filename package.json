@@ -10,7 +10,8 @@
   "keywords": [
     "tslint",
     "gulp",
-    "log"
+    "log",
+    "gulpplugin"
   ],
   "author": "Arturo Guzman",
   "license": "MIT",
