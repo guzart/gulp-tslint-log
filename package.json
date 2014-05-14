@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/guzart/gulp-tslint-log",
   "dependencies": {
-    "tslint": "^0.4.6",
+    "tslint": "^0.4.8",
     "gulp-util": "^2.2.14",
     "through2": "^0.4.1",
     "merge": "^1.1.2"
