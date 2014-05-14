@@ -1,4 +1,4 @@
-/* jshint latedef: false */
+/* jshint latedef: false, indent: 4 */
 /* global Lint */
 'use strict';
 
@@ -18,9 +18,14 @@ function tslintPlugin(config) {
         config = undefined;
     }
 
-    var configObj = Lint.Configuration.findConfiguration(configPath);
-    var configRules = configObj.rules;
+    var configObj;
+    try {
+        configObj = Lint.Configuration.findConfiguration(configPath);
+    } catch(err) {
+        configObj = { rules: {} };
+    }
 
+    var configRules = configObj.rules;
     var options = {
         formatter: 'json',
         configuration: { rules: merge(true, configRules, config) }
